@@ -53,10 +53,17 @@ footer {
     padding: 20px 0;
 }
 
-.profile-image, .figure-image {
+.profile-image {
     width: 100%; /* Full width on mobile */
     height: auto;
     margin: 10px 0; /* Reduced margin */
+}
+
+.figure-image{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100%;
 }
 
 .about-text {
@@ -106,6 +113,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .header-image {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
     nav ul li {
         margin-right: 20px; /* Larger margin for wider screens */
     }
@@ -119,10 +132,21 @@ footer {
         justify-content: space-between;
     }
 
-    .profile-image, .figure-image {
+    .profile-image {
         width: 300px; /* Fixed width on larger screens */
         margin-right: 20px; /* Reduced margin */
     }
+    .figure-container{
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+        width: 100%;
+    }
+    .figure-image {
+        width: 500px; /* Fixed width on larger screens */
+        margin-right: 20px; /* Reduced margin */
+    }
+    
 
     .project {
         flex: 0 1 48%; /* Adjusts each project to take nearly half the container */
