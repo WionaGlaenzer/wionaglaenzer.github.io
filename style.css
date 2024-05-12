@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+}
+
+#about {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+.header-image {
+    width: 100%; /* Ensures the image takes full width of the container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Centers the image in the container */
+    margin: 0 auto; /* Additional centering for the image */
+}
+.about-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px 0; /* Some padding around the section */
+}
+
+.project-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px 0; /* Some padding around the section */
+}
+
+.project-container2 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px 0; /* Some padding around the section */
+}
+
+.profile-image {
+    width: 300px; /* Fixed width for the image */
+    height: auto; /* Fixed height for the image */
+    margin-right: 100px; /* Space between image and text */
+}
+
+.about-text {
+    flex-grow: 1; /* Takes up remaining space */
+}
+
+.about-text a {
+    margin-right: 15px; /* Space between links */
+    color: #0077b5; /* Color of the links */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold font weight */
+}
+
+.about-text a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#projects {
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space between the projects */
+    margin-bottom: 20px; /* Adds bottom margin for spacing between rows */
+}
+
+.project {
+    flex: 0 1 48%; /* Each project takes up nearly half the container, adjusting for margin/padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow for better visibility */
+    padding: 10px;
+    background-color: #fff; /* Adds a background color */
+}
+
+.project img {
+    width: 50%; /* Ensures images scale correctly within the project container */
+    height: auto;
+    margin-bottom: 10px; /* Adds space between the image and the text */
+}
+
+.project h3 {
+    margin: 0 0 10px 0; /* Removes margin around the h3 */
+}
+
+.project p {
+    margin: 0; /* Removes paragraph margin for a cleaner look */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
