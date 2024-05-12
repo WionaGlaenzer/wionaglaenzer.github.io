@@ -70,7 +70,7 @@ footer {
     margin-right: 100px; /* Space between image and text */
 }
 .figure-image {
-    width: 50vh; /* Fixed width for the image */
+    width: 100vh; /* Fixed width for the image */
     height: auto; /* Fixed height for the image */
     margin-right: 100px; /* Space between image and text */
 }
@@ -165,4 +165,9 @@ footer {
 .empty-cell {
     /* Optionally style these if needed, such as background color or borders */
     background-color: transparent; /* Just an example */
+}
+
+.project-text{
+    /*center the text*/
+    text-align: center;
 }

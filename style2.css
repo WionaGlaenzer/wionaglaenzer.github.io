@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    color: #333; /* Changed to contrast with white background */
+    padding: 10px 0; /* Reduced padding */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ensures no extra space */
+    text-align: center; /* Centers navigation */
+}
+
+nav ul li {
+    display: inline-block; /* Changes to inline-block for better control */
+    margin-right: 10px; /* Reduced margin */
+}
+
+nav ul li a {
+    color: #333; /* Made text visible against white bg */
+    text-decoration: none;
+}
+
+section {
+    padding: 20px; /* Reduced padding for smaller screens */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-image {
+    width: 100%; /* Full width on all screens */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-container, .project-container, .project-container2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+    padding: 20px 0;
+}
+
+.profile-image, .figure-image {
+    width: 100%; /* Full width on mobile */
+    height: auto;
+    margin: 10px 0; /* Reduced margin */
+}
+
+.about-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Smaller font for mobile */
+}
+
+.link-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows links to wrap on small screens */
+    justify-content: center;
+    gap: 10px;
+}
+
+.project {
+    flex: 1 0 100%; /* Full width on mobile */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.project img {
+    width: 100%; /* Full width on mobile */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    grid-template-rows: auto; /* Auto-sized rows */
+    gap: 20px;
+}
+
+.antibody-image, .antibody-text {
+    grid-column: 1; /* All items span full width */
+    grid-row: auto; /* Auto placement */
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        margin-right: 20px; /* Larger margin for wider screens */
+    }
+
+    section {
+        padding: 50px; /* Increased padding for larger screens */
+    }
+
+    .about-container, .project-container, .project-container2 {
+        flex-direction: row; /* Horizontal layout for larger screens */
+        justify-content: space-between;
+    }
+
+    .profile-image, .figure-image {
+        width: 300px; /* Fixed width on larger screens */
+        margin-right: 20px; /* Reduced margin */
+    }
+
+    .project {
+        flex: 0 1 48%; /* Adjusts each project to take nearly half the container */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 4fr; /* Back to more columns on larger screens */
+        grid-template-rows: 1fr 4fr;
+    }
+}
