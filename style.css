@@ -49,7 +49,7 @@ footer {
 .about-container {
     display: flex;
     align-items: center; /* Align items vertically */
-    padding: 20px 0; /* Some padding around the section */
+    padding: 30px; /* Some padding around the section */
 }
 
 .project-container {
@@ -70,7 +70,7 @@ footer {
     margin-right: 100px; /* Space between image and text */
 }
 .figure-image {
-    width: 600px; /* Fixed width for the image */
+    width: 50vh; /* Fixed width for the image */
     height: auto; /* Fixed height for the image */
     margin-right: 100px; /* Space between image and text */
 }
@@ -147,8 +147,9 @@ footer {
     grid-template-columns: 1fr 4fr; /* Defines two columns each taking half the width */
     grid-template-rows: 1fr 4fr; /* Defines two rows each taking half the height */
     gap: 0px; /* Space between grid items */
-    width: 100%; /* Set the width of the grid container */
-    height: 50vh; /* Set the height of the grid container, adjust as needed */
+    flex-grow: 1; /* Takes available space */
+    /*width: 100%; /* Set the width of the grid container */
+    /*height: 50vh; /* Set the height of the grid container, adjust as needed */
 }
 
 .antibody-image {
