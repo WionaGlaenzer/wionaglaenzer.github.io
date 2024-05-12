@@ -148,7 +148,7 @@ footer {
     grid-template-rows: 1fr 4fr; /* Defines two rows each taking half the height */
     gap: 0px; /* Space between grid items */
     width: 100%; /* Set the width of the grid container */
-    height: 600px; /* Set the height of the grid container, adjust as needed */
+    height: 50vh; /* Set the height of the grid container, adjust as needed */
 }
 
 .antibody-image {
