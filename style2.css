@@ -68,6 +68,13 @@ footer {
     font-size: 16px; /* Smaller font for mobile */
 }
 
+.about-text a {
+    /*margin-right: 15px; /* Space between links */
+    color: #609BA9; /* Color of the links */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold font weight */
+}
+
 .link-container {
     display: flex;
     flex-wrap: wrap; /* Allows links to wrap on small screens */
