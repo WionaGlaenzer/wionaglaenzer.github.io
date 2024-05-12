@@ -75,11 +75,12 @@ footer {
     font-size: 16px; /* Smaller font for mobile */
 }
 
-.about-text a {
+.about-text a, .about-container a {
     /*margin-right: 15px; /* Space between links */
     color: #609BA9; /* Color of the links */
     text-decoration: none; /* No underline */
     font-weight: bold; /* Bold font weight */
+    padding: 10px;
 }
 
 .link-container {
@@ -155,5 +156,13 @@ footer {
     .grid-container {
         grid-template-columns: 1fr 4fr; /* Back to more columns on larger screens */
         grid-template-rows: 1fr 4fr;
+    }
+    .about-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
     }
 }
